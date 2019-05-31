@@ -87,7 +87,7 @@ function init(){
 
 init()
 
-// LIST VIEW BUTTON
+// LIST-VIEW BUTTON
 
 listButton.addEventListener('click', () =>{
 
@@ -97,14 +97,14 @@ listButton.addEventListener('click', () =>{
 
 });
 
-// GRID VIEW BUTTON
+// GRID-VIEW BUTTON
 
 gridButton.addEventListener('click', () => {
 
     root.classList.add('root1');
     listButton.classList.remove('selected');
     gridButton.classList.add('selected');
-    
+
 })
 
 
