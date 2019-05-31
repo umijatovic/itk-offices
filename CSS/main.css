@@ -1,0 +1,301 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.spinner {
+    width: 200px;
+    height: 200px;
+    background-color: #333;
+  
+    margin: 100px auto;
+    -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+    animation: sk-rotateplane 1.2s infinite ease-in-out;
+  }
+  
+  @-webkit-keyframes sk-rotateplane {
+    0% { -webkit-transform: perspective(120px) }
+    50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+    100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+  }
+  
+  @keyframes sk-rotateplane {
+    0% { 
+      transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+      -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+    } 50% { 
+      transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+      -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+    } 100% { 
+      transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+      -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    }
+  }
+
+  body{
+    font-family: 'Nanum Gothic', sans-serif;
+    
+  }
+
+  header{
+      width: 100%;
+      background-color: #00BCD4;
+      color: white;
+      text-align: center;
+      padding-top: 10px;
+  }
+
+  
+
+  header h1{
+      margin: 10px;
+      font-size: 3em;
+      font-weight: 700;
+  }
+
+  nav button{
+    background-color: #00BCD4;
+    opacity: 0.6;
+    width: 49%;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 2em;
+    border-bottom: 5px solid #00BCD4;
+    margin-bottom: 2px;
+    transition: border-bottom 0.3s , opacity 0.3s;
+  }
+
+  .selected{
+    opacity: 1;
+      border-bottom: 5px solid #FEFF33;
+  }
+
+  /* LIST VIEW */
+
+  .officeDiv{
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 30px;
+      align-items: center;
+  }
+
+  
+
+  .officeDiv div{
+      border-bottom: 2px solid rgb(6, 128, 145);
+      width: 100%;
+      padding-right: 5px;
+  }
+
+  
+
+  .officeDiv img{
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+  }
+
+  .officeDiv h4{
+      color: white;
+      font-size: 1.3em;
+  }
+
+  .officeDiv p{
+      margin-top: 10px;
+      margin-bottom: 10px;
+}
+
+  #root{
+      background-color: #00BCD4;
+      margin: 10px;
+      padding: 30px 0px 1px 20px;
+  }
+
+  .letterPicture{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: #CCCCCC;
+    text-align: center;
+    font-weight: 800;
+    padding: 15px;
+    margin-right: 15px;
+    box-sizing: border-box
+
+  }
+
+  .longDescription{
+    display: none;
+  }
+ 
+  /* GRID VIEW */
+
+  .root1{
+    padding: 30px !important;
+
+  }
+
+  .root1 .officeDiv{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        background-color: #FFFFFF;
+        padding: 40px ;  
+        box-sizing: border-box;
+        border-radius: 3px;
+        -webkit-box-shadow: 0px 14px 12px -4px rgba(47,165,181,1);
+        -moz-box-shadow: 0px 14px 12px -4px rgba(47,165,181,1);
+        box-shadow: 0px 14px 12px -4px rgba(47,165,181,1);
+  }
+
+  .root1 .officeDiv:hover{
+      transform: scale(1.05)
+  }
+
+
+  .root1 .officeDiv div{
+      border-bottom: none;
+    }
+
+  
+
+  .root1 .officeDiv h4{
+      font-size: 1.2em;
+      color: black;
+      font-weight: 800;
+      margin: 10px;
+  }
+
+  .root1 .officeDiv .letterPicture{
+      margin-bottom: 15px;
+      height: 100px;
+      width: 100px;
+      font-size: 2.5em;
+      padding: 26px;
+  }
+
+  .root1 .officeDiv img{
+      margin-bottom: 15px;
+      margin-right: 0;
+      height: 100px;
+      width: 100px;
+  }
+
+  .root1 .longDescription{
+    display: block;
+  }
+
+  .root1 .description{
+    display: none;
+  }
+
+  @media only screen and (min-width: 600px){
+    #root{
+      margin: 20px;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-bottom: 2px;
+    }
+    nav button{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .root1{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .root1 .officeDiv{
+        width: 44%;
+    }
+
+    .root1 .officeDiv:first-of-type{
+        margin-top: 0;
+      }
+
+  }
+
+  @media only screen and (min-width: 1200px) {
+    
+    header{
+        display: flex;
+    }
+
+    header h1{
+      margin: 23px;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: row;
+        margin:  0 auto;
+    }
+
+    nav button{
+        width: 300px;
+    }
+    
+    .root1 .officeDiv{
+        width: 23.6%;
+    }
+
+    .root1{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+    }
+
+    .root1 .officeDiv:first-of-type{
+        margin-top: 0;
+      }
+
+    
+  }
+  
